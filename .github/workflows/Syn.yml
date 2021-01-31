@@ -20,7 +20,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ziye12-JavaScript
+      - name: sync ziye12-JavaScript-master
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
