@@ -37,8 +37,8 @@ jobs:
           npm install
       - name: '运行 【芝嫲视频】'
         run: |
-          cd ~/JavaScript/Task
-          node zhima.js
+          cd ~/JavaScript
+          node Task/zhima.js
         env:
           TZ: Asia/shanghai
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
