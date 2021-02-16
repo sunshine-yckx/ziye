@@ -6,7 +6,7 @@ name: 多看点ziye2.14
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/30 0-14 * * *'
+     - cron: '6 0-15 * * *'
   watch:
     types: started
 jobs:
