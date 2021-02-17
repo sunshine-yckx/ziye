@@ -37,6 +37,7 @@ jobs:
         if: env.FL_flwURL
         run: |
           cd ~/JavaScript
+          git checkout master
           node Task/flw.js
         env:
           
