@@ -34,6 +34,7 @@ jobs:
         if: env.XL_URL
         run: |
           cd ~/JavaScript
+          git checkout master
           node Task/xiaole.js
         env:
           
