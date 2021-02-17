@@ -32,12 +32,12 @@ jobs:
         if: env.FL_flwURL
         run: |
           cd ~/JavaScript
+          git checkout master
           npm install
       - name: '运行 【返利网】'
         if: env.FL_flwURL
         run: |
           cd ~/JavaScript
-          git checkout master
           node Task/flw.js
         env:
           FL_flwydBODY: ${{ secrets.FL_flwydBODY }}
