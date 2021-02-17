@@ -23,6 +23,7 @@ jobs:
           node-version: 12.x
       - name: npm install
         run: |
+          git checkout master
           cd ~/zhiyi
           npm install
       - name: '运行 【多看点ziye2.14】'
