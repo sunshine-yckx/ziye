@@ -35,6 +35,7 @@ jobs:
         if: env.XP_iboxpayHEADER
         run: |
           cd ~/JavaScript
+          git checkout master
           node Task/iboxpay.js
         env:
           
