@@ -30,12 +30,12 @@ jobs:
         if: env.XP_iboxpayHEADER
         run: |
           cd ~/JavaScript
+          git checkout master
           npm install
       - name: '运行 【笑谱】'
         if: env.XP_iboxpayHEADER
         run: |
           cd ~/JavaScript
-          git checkout master
           node Task/iboxpay.js
         env:
           
