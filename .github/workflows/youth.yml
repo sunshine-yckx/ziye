@@ -23,8 +23,8 @@ jobs:
           node-version: 12.x
       - name: npm install
         run: |
-          git checkout master
           cd ~/sunnert
+          git checkout master
           npm install
       - name: '运行 【中青补充】'
         run: |
