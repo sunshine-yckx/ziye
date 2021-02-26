@@ -4,6 +4,62 @@ let ymzhd = $.getdata('ymzhd')
 let ymzbody = $.getdata('ymzbody')
 let ymzbody1 = $.getdata('ymzbody1')
 let ymztxbody = $.getdata('ymztxbody')
+
+if ($.isNode()) {
+
+ /*if (process.env.YMZ_URL && process.env.YMZ_URL.indexOf('\n') > -1) {
+   ymzurl = process.env.YMZ_URL.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   ymzurl = process.env.YMZ_URLL.split()
+  }; */
+if (process.env.YMZ_HD && process.env.YMZ_HD.split('\n').length > 0) {
+   ymzhd = process.env.YMZ_HD.split('\n');
+  } else  {
+   ymzhd = process.env.YMZ_HD.split()
+  };
+if (process.env.YMZ_BODY && process.env.YMZ_BODY.split('\n').length > 0) {
+   ymzbody = process.env.YMZ_BODY.split('\n');
+  } else  {
+   ymzbody = process.env.YMZ_BODY.split()
+  };  
+if (process.env.YMZ_BODY1 && process.env.YMZ_BODY1.split('\n').length > 0) {
+   ymzbody1 = process.env.YMZ_BODY1.split('\n');
+  } else  {
+   ymzbody1 = process.env.YMZ_BODY1.split()
+  };  
+if (process.env.ymztxbody && process.env.ymztxbody.split('\n').length > 0) {
+   ymzbody1 = process.env.ymztxbody.split('\n');
+  } else  {
+   ymzbody1 = process.env.ymztxbody.split()
+  };  
+//video
+/*  Object.keys(ymzurl).forEach((item) => {
+        if (ymzurl[item]) {
+          ymzurlArr.push(ymzurl[item])
+        }
+    }); */
+   Object.keys(ymzhd).forEach((item) => {
+        if (ymzhd[item]) {
+          ymzhdArr.push(ymzhd[item])
+        }
+    });
+    Object.keys(ymzbody).forEach((item) => {
+        if (ymzbody[item]) {
+          ymzbodyArr.push(ymzbody[item])
+        }
+    });  
+    Object.keys(ymzbody1).forEach((item) => {
+        if (ymzbody1[item]) {
+          ymzbody1Arr.push(ymzbody1[item])
+        }
+    });  
+    Object.keys(ymztxbody).forEach((item) => {
+        if (ymztxbody[item]) {
+          ymztxbodyArr.push(ymztxbody[item])
+        }
+    });    
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await ymzck()
