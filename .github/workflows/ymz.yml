@@ -14,6 +14,7 @@ jobs:
         YMZ_HD: ${{ secrets.YMZ_HD }}
         YMZ_BODY: ${{ secrets.YMZ_BODY }}
         YMZ_BODY1: ${{ secrets.YMZ_BODY1 }}
+        ymztxbody: ${{ secrets.ymztxbody }}
         TZ: Asia/shanghai
     steps:
       - name: Checkout
