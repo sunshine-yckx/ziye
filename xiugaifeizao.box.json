@@ -1,12 +1,12 @@
 {
             "id": "age174.app.sub",
-            "name": "肥皂 应用订阅",
+            "name": "肥皂 应用订阅o",
             "author": "@feizao",
             "icon": "https://s3.ax1x.com/2021/02/17/ygLAIA.jpg",
             "repo": "https://github.com/age174/-/edit/main",
             "apps": [{
             "id": "dkd",
-            "name": "多看点",
+            "name": "多看点o",
             "keys": ["dkdurl", "dkdhd", "dkdbody", "dkdtxurl", "dkdtxhd", "dkdtxbody"],
             "author": "@feizao",
             "settings": [{
@@ -29,8 +29,8 @@
     },
     {
             "id": "zmsp",
-            "name": "芝嫲视频",
-            "keys": ["zmurl", "zmhd", "zmbody"],
+            "name": "芝嫲视频o",
+            "keys": ["zmurl", "zmhd", "zmbody","zmurl1", "zmhd1", "zmbody1","zmurl2", "zmhd2", "zmbody2"],
             "author": "@feizao",
             "settings": [{
             "id": "zmspsetting",
@@ -52,7 +52,7 @@
     },
     {
             "id": "wnb",
-            "name": "蜗牛吧",
+            "name": "蜗牛吧o",
             "keys": ["wnburl", "wnbhd", "wnbbody"],
             "author": "@feizao",
             "settings": [{
@@ -98,7 +98,7 @@
     },
     {
             "id": "jqb",
-            "name": "金钱豹",
+            "name": "金钱豹o",
             "keys": ["jqburl", "jqbhd", "jqbggbody", "jqbqdbody", "jqbbody1", "jqbbody2", "jqbbody3", "jqbbody4", "jqbbody5", "jqbrwbody", "jqbzpbody"],
             "author": "@feizao",
             "settings": [{
@@ -120,7 +120,7 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/jqb.js"
     },  {
             "id": "sz",
-            "name": "闪挣",
+            "name": "闪挣o",
             "keys": ["szurl", "szhd"],
             "author": "@feizao",
             "settings": [{
@@ -143,7 +143,7 @@
     },
 	{
             "id": "bsxq",
-            "name": "宝石星球",
+            "name": "宝石星球o",
             "keys": ["bsxqurl", "bsxqhd","bsxqurl2","bsxqhd2","bsxqurl3","bsxqhd3","bsxqurl4","bsxqhd4","bsxqurl5", "bsxqhd5"],
             "author": "@feizao",
             "settings": [{
@@ -165,7 +165,7 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/baosxq.js"
     },{
             "id": "rxm",
-            "name": "任性猫",
+            "name": "任性猫mao",
             "keys": ["rxmurl", "rxmhd","rxmurl2","rxmhd2","rxmurl3","rxmhd3","rxmurl4","rxmhd4","rxmurl5", "rxmhd5","rxmurl6", "rxmhd6","rxmurl7", "rxmhd7","rxmurl8", "rxmhd8","rxmurl9", "rxmhd9","rxmurl10", "rxmhd10","rxmurl11", "rxmhd11","rxmurl12", "rxmhd12","rxmurl13", "rxmhd13","rxmurl14", "rxmhd14","rxmurl15", "rxmhd15","rxmurl16", "rxmhd16","rxmurl17", "rxmhd17","rxmurl18", "rxmhd18","rxmurl19", "rxmhd19","rxmurl20", "rxmhd20","rxmurl21", "rxmhd21","rxmurl22", "rxmhd22"],
             "author": "@feizao",
             "settings": [{
@@ -187,7 +187,7 @@
             "script": "https://raw.githubusercontent.com/age174/-/main/rxm.js"
     },{
             "id": "mh",
-            "name": "陌嗨视频",
+            "name": "陌嗨视频ne",
             "keys": ["mhurl", "mhhd","mhurl2","mhhd2","mhurl3","mhhd3","mhurl4","mhhd4","mhurl5", "mhhd5"],
             "author": "@feizao",
             "settings": [{
@@ -210,7 +210,7 @@
     },
     {
             "id": "fqkk",
-            "name": "番茄看看",
+            "name": "番茄看看o",
             "keys": ["fqkkurl", "fqkkhd","fqkkurl2","fqkkhd2","fqkkurl3","fqkkhd3","fqkkurl4","fqkkhd4","fqkkurl5", "fqkkhd5","fqkkurl6","fqkkhd6","fqkkurl7","fqkkhd7","fqkkurl8","fqkkhd8","fqkkurl9", "fqkkhd9","fqkkurl10","fqkkhd10","fqkkurl11","fqkkhd11","fqkkurl12","fqkkhd12","fqkkurl13", "fqkkhd13","fqkkurl14","fqkkhd14","fqkkurl15", "fqkkhd15"],
             "author": "@feizao",
             "settings": [{
