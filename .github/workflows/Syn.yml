@@ -17,12 +17,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-
       - name: sync ziye12-JavaScript-master
         uses: repo-sync/github-sync@v2
-        if: env.PAT
         with:
-          source_repo: "https://github.com/ziye66666/JavaScript.git"
+          source_repo: "https://github.com/ziye11/JavaScript.git"
           source_branch: "main"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
