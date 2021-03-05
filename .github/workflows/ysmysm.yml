@@ -4,7 +4,7 @@ name: ysm1云扫码
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0,30 1-15 * * *'
+     - cron: '30 1-15/2 * * *'
   watch:
     types: started
 jobs:
