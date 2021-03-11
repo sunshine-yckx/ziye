@@ -4,7 +4,7 @@ name: xsmm悬赏喵喵1
 on:
   workflow_dispatch:
   schedule:
-     - cron: '13 */6 * * *'
+     - cron: '13 */4 * * *'
   watch:
     types: started
 jobs:
