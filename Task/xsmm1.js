@@ -65,7 +65,7 @@ hostname = vip.75787.com
 const $ = new Env('悬赏喵喵');
 let status;
 status = (status = ($.getval("xsmmstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const xsmmurlArr = [], xsmmhdArr = [],xsmmcount = ''
+let xsmmurlArr = [], xsmmhdArr = [],xsmmcount = ''
 let xsmmurl = $.getdata('xsmmurl')
 let xsmmhd = $.getdata('xsmmhd')
 let xsmmmc = '',xsmmid = '',xsmm1 = ''
@@ -73,6 +73,30 @@ let xsmmhb = ($.getval('xsmmhb') || '11');  //兑换红包id，id 11 代表兑�
 
 let xsmmdh = ($.getval('xsmmdh') || '14');  //提现id，14代表提现0.3元,15代表提现10元,16代表提现20元,17代表提现50元,18代表提现100元,19代表提现200元，模式提现id 14 提现0.3元，不想看广告想提现其他额度自己修改提现id运行脚本就可以
 
+if ($.isNode()) {
+   if (process.env.XSMM_URL && process.env.XSMM_URL.indexOf('\n') > -1) {
+   xsmmurlArr = process.env.XSMM_URL.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   xsmmurlArr = process.env.XSMM_URL.split()
+  };
+  if (process.env.XSMM_HD && process.env.XSMM_HD.indexOf('\n') > -1) {
+   xsmmhdArr = process.env.XSMM_HD.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   xsmmhdArr = process.env.XSMM_HD.split()
+  };
+	
+    console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
+    console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
+ } else {xsmmurlArr.push($.getdata('xsmmurl'))
+    xsmmhdArr.push($.getdata('xsmmhd'))
+    let xsmmcount = ($.getval('xsmmcount') || '1');
+  for (let i = 2; i <= xsmmcount; i++) {
+    xsmmurlArr.push($.getdata(`xsmmurl${i}`))
+    xsmmhdArr.push($.getdata(`xsmmhd${i}`))
+  }
+}
 
 !(async () => {
   if (typeof $request !== "undefined") {
