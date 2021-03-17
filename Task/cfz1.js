@@ -67,7 +67,12 @@ let concurrency = ($.getval('cfzConcurrency') || '1') - 0; // 并发执行任务
 concurrency = concurrency < 1 ? 1 : concurrency;
 let sdid = '';sdlqid = '';tc = 0
 
-if ($.isNode()) {
+!(async () => {
+  if (typeof $request !== "undefined") {
+    await cfzck()
+   
+  } else {
+  if ($.isNode()) {
   COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
   console.log(
     `============ cookies分隔符为：${JSON.stringify(
@@ -91,18 +96,30 @@ if (
     cfzhd = process.env.CFZHD.split();
   }
 
-!(async () => {
-  if (typeof $request !== "undefined") {
-    await cfzck()
-   
-  } else {cfzurlArr.push($.getdata('cfzurl'))
+
+
+	
+  Object.keys(cfzurl).forEach((item) => {
+        if (cfzurl[item]) {
+          cfzurlArr.push(cfzurl[item])
+        }
+    });
+    Object.keys(cfzhd).forEach((item) => {
+        if (cfzhd[item]) {
+          cfzhdArr.push(cfzhd[item])
+        }
+    });
+
+
+  	
+  } else {	  
+    cfzurlArr.push($.getdata('cfzurl'))
     cfzhdArr.push($.getdata('cfzhd'))
-    cfzsbhdArr.push($.getdata('cfzsbhd'))
     let cfzcount = ($.getval('cfzcount') || '1');
   for (let i = 2; i <= cfzcount; i++) {
     cfzurlArr.push($.getdata(`cfzurl${i}`))
     cfzhdArr.push($.getdata(`cfzhd${i}`))
-    cfzsbhdArr.push($.getdata(`cfzsbhd${i}`))
+  }
   }
     let execAcList = [];
     let slot = cfzhdArr.length % concurrency == 0 ? cfzhdArr.length / concurrency : parseInt(cfzhdArr.length / concurrency) + 1;
@@ -110,9 +127,9 @@ if (
       if(o){
         let idx = i % slot;
         if (execAcList[idx]) {
-          execAcList[idx].push({no: i + 1, cfzhd: o, cfzsbhd: cfzsbhdArr[i], cfzid: ''});
+          execAcList[idx].push({no: i + 1, cfzhd: o, cfzid: ''});
         } else {
-          execAcList[idx] = [{no: i + 1, cfzhd: o, cfzsbhd: cfzsbhdArr[i], cfzid: ''}];
+          execAcList[idx] = [{no: i + 1, cfzhd: o, cfzid: ''}];
         }
       }
     });
@@ -156,20 +173,6 @@ await cfzsdid(ac)
     }
   })
 }
-
-//春风转数据获取
-function cfzck() {
-   if ($request.url.indexOf("list?city_type") > -1) {
- const cfzurl = $request.url
-  if(cfzurl)     $.setdata(cfzurl,`cfzurl${status}`)
-    $.log(cfzurl)
-  const cfzhd = JSON.stringify($request.headers)
-        if(cfzhd)    $.setdata(cfzhd,`cfzhd${status}`)
-$.log(cfzhd)
-   $.msg($.name,"",'春风转'+`${status}` +'阅读数据获取成功！')
-  }
-}
-
 
 //春风转阅读
 function cfzyd(ac,timeout = 0) {
