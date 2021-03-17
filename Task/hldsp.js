@@ -52,10 +52,36 @@ hostname = vip.75787.com
 const $ = new Env('哈喽短视频');
 let status;
 status = (status = ($.getval("hldspstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const hldspurlArr = [], hldsphdArr = [],hldspcount = ''
+let hldspurlArr = [], hldsphdArr = [],hldspcount = ''
 let hldspurl = $.getdata('hldspurl')
 let hldsphd = $.getdata('hldsphd')
 let hlsign = '',hluid = ''
+
+if ($.isNode()) {
+  if (process.env.HLDSP_URL && process.env.HLDSP_URL.indexOf('\n') > -1) {
+   hldspurlArr = process.env.HLDSP_URL.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   hldspurlArr = process.env.HLDSP_URL.split()
+  };
+  if (process.env.HLDSP_HD && process.env.HLDSP_HD.indexOf('\n') > -1) {
+   hldsphdArr = process.env.HLDSP_HD.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   hldsphdArr = process.env.HLDSP_HD.split()
+  };
+	
+    console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
+    console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
+ } else {hldspurlArr.push($.getdata('hldspurl'))
+    hldsphdArr.push($.getdata('hldsphd'))
+    let hldspcount = ($.getval('hldspcount') || '1');
+  for (let i = 2; i <= hldspcount; i++) {
+    hldspurlArr.push($.getdata(`hldspurl${i}`))
+    hldsphdArr.push($.getdata(`hldsphd${i}`))
+  }
+}
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await hldspck()
