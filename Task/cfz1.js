@@ -66,6 +66,31 @@ const cfzurlArr = [], cfzhdArr = [],cfzsbhdArr = []
 let concurrency = ($.getval('cfzConcurrency') || '1') - 0; // 并发执行任务的账号数，默单账号循环执行
 concurrency = concurrency < 1 ? 1 : concurrency;
 let sdid = '';sdlqid = '';tc = 0
+
+if ($.isNode()) {
+  COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
+  console.log(
+    `============ cookies分隔符为：${JSON.stringify(
+      COOKIES_SPLIT
+    )} =============\n`
+  );
+if (
+    process.env.CFZURL &&
+    process.env.CFZURL.indexOf(COOKIES_SPLIT) > -1
+  ) {
+    cfzurl = process.env.CFZURL.split(COOKIES_SPLIT);
+  } else {
+    cfzurl = process.env.CFZURL.split();
+  }
+  if (
+    process.env.CFZHD &&
+    process.env.CFZHD.indexOf(COOKIES_SPLIT) > -1
+  ) {
+    cfzhd = process.env.CFZHD.split(COOKIES_SPLIT);
+  } else {
+    cfzhd = process.env.CFZHD.split();
+  }
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await cfzck()
