@@ -28,8 +28,8 @@ jobs:
       - name: npm install
         if: env.XL_URL
         run: |
-          cd ~/JavaScript
-          git checkout master
+          cd ~/ziye
+          git checkout main
           npm install
       - name: '运行 【小乐】'
         if: env.XL_URL
