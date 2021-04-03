@@ -60,7 +60,21 @@ hostname = wx.tiantianaiyuedu.site
 
 
 const $ = new Env('微客众智自动阅读');
-const wkzz = $.getjson('wkzz', [])
+const wkzz = $.getjson('wkzz', [{
+    "id": 638596,
+    "url": "http://wx.tiantianaiyuedu.site/read/article",
+    "hd": "{\"Content-Type\":\"application/json;charset=utf-8\",\"Accept\":\"application/json, text/plain, */*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"wx.tiantianaiyuedu.site\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://wx.tiantianaiyuedu.site\",\"Content-Length\":\"107\",\"Connection\":\"keep-alive\",\"User-Agent\":\"Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001233) NetType/WIFI Language/zh_CN\",\"X-CSRF-TOKEN\":\"qD45zY6Zv4Jg82Op3T5GY5iPuAqXJJnnxo73V2rs\",\"Cookie\":\"XSRF-TOKEN=eyJpdiI6IkhQSFA2T0JVNG1rZVFJTk9hbDdHYUE9PSIsInZhbHVlIjoiSDBmSDhmQmg5ZDV1WHVzVFlidm9NaWZUQ1JLQmVsMVQrcTlqZVZYc0VlaXdSdEdkV1FqUTVXMWMzRTMzbnp5RTVZcVppcVJ0UUUxTEFuOVJzVkhldEE9PSIsIm1hYyI6IjhiYzNiODcxMDhkMzVkNWZjZTNkYjBkNGMwZDI2OWZkMTdkNTBkYzEyYjJkYTZkYTczZGMxMGMyMzZkZmY0MWMifQ%3D%3D; laravel_session=eyJpdiI6IlMxZUFBbmcySFwvNlwvd1pNcGVJUTZzQT09IiwidmFsdWUiOiI3MkJsT3hZeEJRcU9HV1RicDg5WmNseWpPVVA4NXhEQW9cL2w1aEo4M0RzR2xTSnFNQlR5ZDVFd3d3MFdBbzRhbTE5c2VqYkFPemJ5aVdWTmZcLytsVnJ3PT0iLCJtYWMiOiIwM2JjMzIzMDIxNWJhYzNkZjI2MzRiMGQ0ZDA3MzJjY2Y5M2JmZTVkMTZjMzU5NTE3NmE0YWEzN2YyNGIzOTI2In0%3D\"}"
+  },
+  {
+    "id": 638598,
+    "url": "http://wx.tiantianaiyuedu.site/read/article",
+    "hd": "{\"Content-Type\":\"application/json;charset=utf-8\",\"Accept\":\"application/json, text/plain, */*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"wx.tiantianaiyuedu.site\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://wx.tiantianaiyuedu.site\",\"Content-Length\":\"107\",\"Connection\":\"keep-alive\",\"User-Agent\":\"Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001233) NetType/WIFI Language/zh_CN\",\"X-CSRF-TOKEN\":\"WR27ugeKiagmMmnW0Ju947IWkbFdUdjCUxbdjFxH\",\"Cookie\":\"XSRF-TOKEN=eyJpdiI6IkpQVWVvQ05Fb0xGOWNMS1Rtbk9wOUE9PSIsInZhbHVlIjoiQkVmb2RWaGhsRVhxbE9rK0gxQVBPcjJkbGowY09Ed2VJbVBUY0xVZVRBa2pkbWE5SUtZUlF1NDR3KzVLM2l0VG1PWDAzR1g5dW5JblpnT1wvVnhEMU1nPT0iLCJtYWMiOiJmMzliZWI1MTZkMDg2NmIyMTBlM2VlZmJlNWMyOGJkN2Q3YzE2N2IyNzgxMmNhNjZkMjVlYmI4YTRjMTUwOTEwIn0%3D; laravel_session=eyJpdiI6InRRMTN2SUE2QjdpZVZ4STRKVFAwZGc9PSIsInZhbHVlIjoiZkcwcFJLelV0TzBsTFFWUkZya0M0VmI1NWpFRmJxc3RaMEpSR3UyKytYSnoxTmUrb0g4YW5jeHZxXC85MVwvdlBLcjg5dEx1WWhcL2hBVWZVXC9hVEJRWlBRPT0iLCJtYWMiOiIzZGUxMjEyZGE5MWIxZTk5NDY4ZWY1ZDRmMjAzMGRiYWNiMzQwNTliZTcwYzc4YjIwODAwZjI3MTRkOTZhYTRhIn0%3D\"}"
+  },
+  {
+    "id": 638599,
+    "url": "http://wx.tiantianaiyuedu.site/read/article",
+    "hd": "{\"Content-Type\":\"application/json;charset=utf-8\",\"Accept\":\"application/json, text/plain, */*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"wx.tiantianaiyuedu.site\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://wx.tiantianaiyuedu.site\",\"Content-Length\":\"107\",\"Connection\":\"keep-alive\",\"User-Agent\":\"Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001233) NetType/WIFI Language/zh_CN\",\"X-CSRF-TOKEN\":\"gspNPIdTnsxYVyw6FLUPwa0ry6LfUTBBtXAAGNPY\",\"Cookie\":\"XSRF-TOKEN=eyJpdiI6IjJrNHpXd1RZVDV2THp4a3NFV1N3Z2c9PSIsInZhbHVlIjoiTkdaSkxzM1dnMWdHRllIZStQTTAxVFdjR1dmNFR6UmpUZEY0OWhwNFwvZGg0N3llYzVndnhMbXVWUE5EOHo5UUFWM2RJa1VcL3hkeHpUR0NYQTZuYTk4Zz09IiwibWFjIjoiZDBmZTA2Mzc3ZjRhNWNlNDI4MTNmNWVhZTRmZjliOWJkZTJlZDYwNzNiYjJkZjEyNWM3MzNmNDc1YTA1NDg0NSJ9; laravel_session=eyJpdiI6InRqc1RBK09OSm1HVGU1QnRNckpZRXc9PSIsInZhbHVlIjoic2drYm5rdVlBZXZ2MkNYVXdZWWdpaVNQc3pJSUxtdGxRMHBwdzNaV2Y5UWhPNTR4R1BWb1ROYnJLenF3aTY0c2xwdXh0eTlqZnRSN0t5MXdLc3RPbkE9PSIsIm1hYyI6IjNlM2EwYjhhYjVmYTc5MjZjYmU3NzZjNjYxNjdjNmEwZGM0YjdhNzEyMzE0YjRhNTMzOWIzYTg2OTkxMjA5ZjUifQ%3D%3D\"}"
+  }])
 let times = Math.round(Date.now() / 1000)
 let wkzzurl = '', wkzzhd = '',id = '',uid='',tid='',name=''
 !(async () => {
