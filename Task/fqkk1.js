@@ -70,7 +70,18 @@ hostname = m.*
 
 const $ = new Env('番茄看看');
 const fqkkurlArr = [], fqkkhdArr = []
-let fqkk = $.getjson('fqkk', [  {    "uid": 3964229,    "url": "http://m.ideng.ren/reada/getTask",    "hd": "{\"Accept\":\"*/*\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://m.ideng.ren\",\"Cookie\":\"autoRead=1; udtauth=0c11nvqYEXmBEntK%2Bq17D%2F7DuF8FCM00O3AelaaZplu%2BKgvBy5p1wqjUVL%2F11lcCxenFoVFDq%2Fb%2B8jVTRJKODHD4ensBSNmtRGh0mqELO3%2Fgj3WpoNASXw2ejERcCrcpWzH%2FOHbg4sY4hhRTo89lSouNrGG%2Bk5U5geeYw1s5w2M; PHPSESSID=nvlqalh2dtpt5lpud3eddshku7\",\"Connection\":\"keep-alive\",\"Host\":\"m.ideng.ren\",\"Content-Length\":\"0\",\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN\",\"Referer\":\"http://m.ideng.ren/reada?upuid=3950781\",\"Accept-Language\":\"zh-cn\",\"X-Requested-With\":\"XMLHttpRequest\"}"  }])
+let fqkk = $.getjson('fqkk', [
+  {
+    "uid": 4194775,
+    "url": "http://m.281644.pw/reada/getTask",
+    "hd": "{\"Accept\":\"*/*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"m.281644.pw\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://m.281644.pw\",\"User-Agent\":\"Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001233) NetType/WIFI Language/zh_CN\",\"Connection\":\"keep-alive\",\"Referer\":\"http://m.281644.pw/reada?upuid=4194775\",\"Content-Length\":\"0\",\"Cookie\":\"autoRead=1; udtauth=88cbIc%2FIODTBbM2qxHz92y3xiegzbVFGsUyQ6C5Hei1T9wP2yctDwI%2FKvXQiIqjXDHYEV15ZVJvmv9QjZhUWPhd%2BN3vzOK0NA%2BYsv0FXChoU3ZH9Re%2FBjjrd3ED6Rp%2BcUgvBLH9na7aO%2BSZ6GTQpHB6Tg%2BYWV0SpybPb5nIK0nc; PHPSESSID=8g3dhe0g5o69f8lbldh48gktei\"}"
+  },
+  {
+    "uid": 4194791,
+    "url": "http://m.281644.pw/reada/getTask",
+    "hd": "{\"Accept\":\"*/*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"m.281644.pw\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://m.281644.pw\",\"User-Agent\":\"Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001233) NetType/WIFI Language/zh_CN\",\"Connection\":\"keep-alive\",\"Referer\":\"http://m.281644.pw/reada?upuid=4194775\",\"Content-Length\":\"0\",\"Cookie\":\"autoRead=1; udtauth=eba9mbH3c0jaluXjehY1ppGEVNBvR3nZY5BMTndvsNxfUwHq1XBie%2FqWOxBOAjVL86L57lKIqSPvC53QnFBQ4cUgoaWh5TLAazf%2FVS%2F8QU5OcRhy0gXKqG7yFQ8Xr3NlstAl3ArdZokDqjAJasJlNPE1zlFzmQGW4lforialWUo; PHPSESSID=acr86al4vj8uc44ir1dfh6e4ta\"}"
+  }
+])
 let fqkkBanfirstTask = $.getval('fqkkBanfirstTask') || 'false' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
 let fqkkCkMoveFlag = $.getval('fqkkCkMove') || ''
 let fqtx = ($.getval('fqtx') || '100');  // 此处修改提现金额，0.3元等于30，默认为提现一元，也就是100
