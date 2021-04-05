@@ -82,7 +82,7 @@ let fqkk = $.getjson('fqkk', [
     "hd": "{\"Accept\":\"*/*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"m.281644.pw\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://m.281644.pw\",\"User-Agent\":\"Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001233) NetType/WIFI Language/zh_CN\",\"Connection\":\"keep-alive\",\"Referer\":\"http://m.281644.pw/reada?upuid=4194775\",\"Content-Length\":\"0\",\"Cookie\":\"autoRead=1; udtauth=eba9mbH3c0jaluXjehY1ppGEVNBvR3nZY5BMTndvsNxfUwHq1XBie%2FqWOxBOAjVL86L57lKIqSPvC53QnFBQ4cUgoaWh5TLAazf%2FVS%2F8QU5OcRhy0gXKqG7yFQ8Xr3NlstAl3ArdZokDqjAJasJlNPE1zlFzmQGW4lforialWUo; PHPSESSID=acr86al4vj8uc44ir1dfh6e4ta\"}"
   }
 ])
-let fqkkBanfirstTask = $.getval('fqkkBanfirstTask') || 'false' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
+let fqkkBanfirstTask = $.getval('fqkkBanfirstTask') || 'ture' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
 let fqkkCkMoveFlag = $.getval('fqkkCkMove') || ''
 let fqtx = ($.getval('fqtx') || '100');  // 此处修改提现金额，0.3元等于30，默认为提现一元，也就是100
 let concurrency = ($.getval('fqkkConcurrency') || '1') - 0; // 并发执行任务的账号数，默单账号循环执行
