@@ -70,16 +70,7 @@ if ($.isNode()) {
   } else {
    hlyyurlArr = process.env.HLYY_URL.split()
   };
-  if (process.env.HLYY_BD && process.env.HLYY_BD.indexOf('#') > -1) {
-   hlyybodyArr = process.env.HLYY_BD.split('#');
-   console.log(`您选择的是用"#"隔开\n`)
-  }
-  else if (process.env.HLYY_BD && process.env.HLYY_BD.indexOf('\n') > -1) {
-   hlyybodyArr = process.env.HLYY_BD.split('\n');
-   console.log(`您选择的是用换行隔开\n`)
-  } else {
-   hlyybodyArr = process.env.HLYY_BD.split()
-  };	
+  
  	
 	
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
