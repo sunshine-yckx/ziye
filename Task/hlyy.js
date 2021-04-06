@@ -86,6 +86,15 @@ if ($.isNode()) {
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
     console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
 
+ } else {hlyyurlArr.push($.getdata('hlyyurl'))
+    hlyyhdArr.push($.getdata('hlyyhd'))
+    hlyybodyArr.push($.getdata('hlybodyArr'))
+    let hlyycount = ($.getval('hlyycount') || '1');
+  for (let i = 2; i <= ysmcount; i++) {
+    hlyyurlArr.push($.getdata(`hlyyurlArr${i}`))
+    hlyyhdArr.push($.getdata(`hlyyhdArr${i}`))
+    hlyybodyArr.push($.getdata(`hlyybodyArr${i}`))
+  }
 }
 
 
