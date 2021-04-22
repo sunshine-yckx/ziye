@@ -20,7 +20,7 @@ jobs:
       - name: sync ziye12-JavaScript-master
         uses: repo-sync/github-sync@v2
         with:
-          source_repo: "https://github.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE.git"
+          source_repo: "https://github.com/ziye888/JavaScript.git"
           source_branch: "main"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
